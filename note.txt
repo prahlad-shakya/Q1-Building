@@ -1,0 +1,8 @@
+🔹 class="navbar"
+This class comes from Bootstrap. It applies the basic styling for a navigation bar, including spacing, alignment, and layout.
+
+🔹 navbar-expand-lg
+This class controls responsiveness of the navbar:
+
+expand-lg means:
+The navbar will be collapsed (like a hamburger menu) on small and medium screens, and it will expand (horizontal) starting from large screens (lg) and up.

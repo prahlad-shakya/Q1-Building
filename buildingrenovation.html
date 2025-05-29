@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Building</title>
+    <link rel="icon" href="https://handyhelpforhire.com.au/assets/img/white-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container navbar-container">
+                <a href="index.html"><img src="./images/white-logo.png" alt="Logo" class="logo"></a>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="navbar-nav">
+                    <button id="cross-btn" class="cross cross-btn">X</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bathroomrenovation.html">Bathroom Renovation</a></li>
+                            <li><a class="dropdown-item" href="projectmanagement.html">Project Management</a></li>
+                            <li><a class="dropdown-item" href="buildingrenovation.html">Building Renovation</a></li>
+                            <li><a class="dropdown-item" href="assetmanagement.html">Asset Management</a></li>
+                            <li><a class="dropdown-item" href="facilitiesmanagement.html">Facilities Management</a></li>
+                            <li><a class="dropdown-item" href="buildingandengineeringcompliance.html">Building And
+                                    Engineering Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i
+                                    class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="need-help-wrapper">
+        <div class="need-help">
+            <button id="needHelpBtn" class="need-help-btn">
+                <i class="bi bi-chat-left-dots"></i>
+            </button>
+        </div>
+        <div id="needHelpForm" class="need-help-form hidden">
+            <button class="close-button" onclick="closeForm()">X</button>
+            <input type="text" placeholder="Your Name" class="form-control" />
+            <input type="email" placeholder="Your Email Address" class="form-control" />
+            <input type="tel" placeholder="Your Phone Number" class="form-control" />
+            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+            <button type="submit" class="form-control">Send Now</button>
+        </div>
+    </section>
+    <section class="reviews-breadcrumb-wrapper">
+        <div class="container">
+            <div class="breadcrumb-container">
+                <span class="water-text">SERVICES</span>
+                <h1>Building Renovation</h1>
+            </div>
+            <div class="breadcrumb-container-overlay"></div>
+            <div class="breadcrumb-navigation">
+                <a href="index.html">HOME</a>
+                <p><i class="fa fa-circle"></i> &nbsp;SERVICES</p>
+            </div>
+        </div>
+    </section>
+    <section class="services-about-wrapper">
+        <div class="container services-about-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/gallery-images/building-renovation2.jpg" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <h5>Building Renovation</h5>
+                    <h1><span class="heading">Revitalising Spaces with Purpose</span></h1>
+                    <p>We specialize in transforming outdated or damaged buildings into refreshed, functional, and
+                        modern spaces. Whether it's a residental property, commercial facility, or strata building, Q1
+                        BUilding Services and Maintenance delivers renovation solutions tailored to your needs,
+                        timeline, and budget.</p>
+                    <ul class="quality-list">
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We upgrade interiors and exteriors to
+                            enhance functionality, aesthetics, and value.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We coordinate all trades and materials
+                            to ensure efficient, high-quality work.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We focus on safety, compliance, and
+                            structural integrity throughout the renovation.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We deliver renovations that reflet your
+                            vision while meeting today's building standards.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-service-wrapper">
+        <div class="container services-service">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/maintenance.png" alt="">
+                    <h6>Modernised Spaces, Lasting Results</h6>
+                    <p>We breathe new life into old or worn structures--enhancing aesthetics, usability, and property
+                        value through thoughtful renovations.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/floor-plan.png" alt="">
+                    <h6>Custom Renovation Solutions</h6>
+                    <p>Every building is unique. We tailor our renovation solutions to match your specific goals, from
+                        home updates to full-scale refurbishments.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/protected.png" alt="">
+                    <h6>Quality work with Minimal Disruption</h6>
+                    <p>Our team ensures efficient timelines, safe practices, and tidy sites-- delivering quality
+                        finishes while keeping your space functional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="swiper-images-wrapper">
+        <div class="container">
+            <!-- Main Slider -->
+            <div class="swiper productSwiperMain">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/building-renovation-images/buidling-renovation1.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Assessment and Planning</h2>
+                            <p>This stage involves inspecting the building to evaluate its current condition and define
+                                the renovation goals. Structural integrity, safety compliance, and design requirements
+                                are assessed. A detailed plan is created based on budget, timeline and desired
+                                improvements</p>
+                            <ul>
+                                <li>Site and structural assessment</li>
+                                <li>Identifying areas for repair or upgrade</li>
+                                <li>Cost estimation and budgeting</li>
+                                <li>Defining scope and timeline</li>
+                                <li>Obtaining necessary permits and approvals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/building-renovation-images/building-renovation.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Demolition and site preparation</h2>
+                            <p>Outdated, damaged or unnecessary structures are safely demolished. This stage also
+                                includes clearing debris and prepping the space for reconstruction, ensuring safety and
+                                compliance with regulations.</p>
+                            <ul>
+                                <li>Removal of old materials, fixtures, or finishes</li>
+                                <li>Hazardous material handling</li>
+                                <li>Site cleaning and leveling</li>
+                                <li>Temporary support structures</li>
+                                <li>Safety precautions and signage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/building-renovation-images/building-renovation2.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Structural and Interior Renovation</h2>
+                            <p>Core construction work is carried out, including structural repairs, wall modifications,
+                                flooring, and roofing. Interior updates such as electrical, plumbing, and HVAC systems
+                                are also installed or upgraded.</p>
+                            <ul>
+                                <li>Reinforcing or replacing structural elements</li>
+                                <li>Electrical rewiring and plumbing upgrade</li>
+                                <li>HVAC system installation</li>
+                                <li>Flooring, ceiling, and wall work</li>
+                                <li>Installation of windows, doors, and insulationp</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/building-renovation-images/buidling-renovation1.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Finishing and Handover</h2>
+                            <p>This final stage includes painting, lighting, furnishing, and cleaning. After all
+                                elements are completed, the building is inspected for quality, safety, and compliance.
+                                It’s then handed over for use.</p>
+                            <ul>
+                                <li>Interior painting and decorative finishes</li>
+                                <li>Lighting fixtures, cabinetry, and furniture</li>
+                                <li>Deep cleaning and polishing</li>
+                                <li>Final inspections and certifications</li>
+                                <li>Client walkthrough and handover</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Thumbnail Slider -->
+            <div thumbsSlider="" class="swiper productSwiperThumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Assessment Planning</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Demolition Preparation</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Structural Renovation</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Finishing Handover</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="services-images-wrapper">
+        <div class="services-images-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/building-renovation-images/buidling-renovation1.jpg" class="glightbox"
+                                data-gallery="building-renovation-gallery" data-title="Building Renovation 1">
+                                <img src="./images/building-renovation-images/buidling-renovation1.jpg"
+                                    alt="Building Renovation 1">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/building-renovation-images/building-renovation.jpg" class="glightbox"
+                                data-gallery="building-renovation-gallery" data-title="Building Renovation">
+                                <img src="./images/building-renovation-images/building-renovation.jpg"
+                                    alt="Building Renovation">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/building-renovation-images/building-renovation2.jpg" class="glightbox"
+                                data-gallery="building-renovation-gallery" data-title="Building Renovation 2">
+                                <img src="./images/building-renovation-images/building-renovation2.jpg"
+                                    alt="Building Renovation 2">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/building-renovation-images/duplex.jpg" class="glightbox"
+                                data-gallery="building-renovation-gallery" data-title="Duplex">
+                                <img src="./images/building-renovation-images/duplex.jpg" alt="Duplex">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/building-renovation-images/hall.jpg" class="glightbox"
+                                data-gallery="building-renovation-gallery" data-title="Hall">
+                                <img src="./images/building-renovation-images/hall.jpg" alt="Hall">
+                            </a>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-get-a-quote-wrapper">
+        <div class="container services-quote">
+            <div class="row">
+                <div class="col-lg-6 services-quote-left">
+                    <h2><span class="heading">Design. Upgrade. Deliver.</span></h2>
+                    <p>Q1 Building Services and Maintenance approaches every renovation with precision and
+                        care--revitalising spaces to meet modern standards and client expectations. From initial
+                        consultation to final handover, we ensure a smooth process with minimal disruption. <br><br>With
+                        tailored planning, skilled craftmanship, and a commitment to quality, we deliver renovations
+                        that are functional, stylish, and built to last.</p>
+                    <button class="theme-btn">Get a quote</button>
+                </div>
+                <div class="col-lg-6 services-quote-right">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    1. What types of buildings do you renovate?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    We renovate residental homes, commercial spaces, and strata buildings--tailoring
+                                    each project to suit the structure and your goals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    2. Can you help with design and layout changes?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Yes, we work closely with you to plan functional, modern layouts that align with
+                                    your vision and building requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    3. Do you manage all trades and materials?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Absolutely, We coordinate all trades, source quality materials, and ensure the
+                                    entire renovation runs smoothly from start to finish.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-wrapper">
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="./images/white-logo-main.png" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            We can help design your dream project and handle the Council approval. We take care of every
+                            detail from
+                            start to finish, guiding you every step of the way for a stress-free experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <h4>QUICK LINKS</h4>
+                            <a href="index.html">
+                                <p>Home</p>
+                            </a>
+                            <a href="about.html">
+                                <p>About Us</p>
+                            </a>
+                            <a href="reviews.html">
+                                <p>Reviews</p>
+                            </a>
+                            <a href="gallery.html">
+                                <p>Gallery</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Contact</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>USEFUL LINKS</h4>
+                            <p>Search</p>
+                            <p>FAQS</p>
+                            <a href="about.html">
+                                <p>Book Now</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Our Concept</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>OUR SERVICES</h4>
+                            <a href="bathroomrenovation.html">
+                                <p>Bathroom Renovation</p>
+                            </a>
+                            <a href="projectmanagement.html">
+                                <p>Project Management</p>
+                            </a>
+                            <a href="buildingrenovation.html">
+                                <p>Building Renovation</p>
+                            </a>
+                            <a href="assetmanagement.html">
+                                <p>Asset Management</p>
+                            </a>
+                            <a href="facilitiesmanagement.html">
+                                <p>Facilities Management</p>
+                            </a>
+                            <a href="buildingandengineeringcompliance.html">
+                                <p>Building & Engineering Compliance</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>CONTACTS</h4>
+                            <p>PHONE</p>
+                            <p>0732744729</p>
+                            <p>EMAIL</p>
+                            <p>info@q1buildingservices.com.au</p>
+                            <p>
+                                <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                    class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="footer-bottom">
+                    <div class="footer-bottom-text">
+                        <p>© 2025 Q1 BUILDING SERVICES AND MAINTENANCE. All rights reserved.</p>
+                    </div>
+                    <div class="footer-images">
+                        <p>
+                            <img src="./images/visa.png" />
+                            <img src="./images/mastercard.png" />
+                            <img src="./images/american-express.png" />
+                            <img src="./images/paypal.png" />
+                            <img src="./images/discover.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
+        var productThumbs = new Swiper(".productSwiperThumbs", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+
+        var productMain = new Swiper(".productSwiperMain", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: productThumbs,
+            },
+        });
+    </script>
+
+    <script>
+        const needHelpBtn = document.getElementById("needHelpBtn");
+        const needHelpForm = document.getElementById("needHelpForm");
+
+        needHelpBtn.addEventListener("click", () => {
+            needHelpForm.classList.toggle("hidden");
+        });
+    </script>
+
+    <script>
+        function closeForm() {
+            document.getElementById('needHelpForm').classList.add('hidden');
+        }
+    </script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            loop: true,
+            touchNavigation: true
+        });
+    </script>
+
+</body>
+
+</html>

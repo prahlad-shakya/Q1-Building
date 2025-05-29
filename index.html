@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Building</title>
+    <link rel="icon" href="./images/white-logo-main.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container navbar-container">
+                <a href="index.html"><img src="./images/white-logo.png" alt="Logo" class="logo"></a>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="navbar-nav">
+                    <button id="cross-btn" class="cross cross-btn">X</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bathroomrenovation.html">Bathroom Renovation</a></li>
+                            <li><a class="dropdown-item" href="projectmanagement.html">Project Management</a></li>
+                            <li><a class="dropdown-item" href="buildingrenovation.html">Building Renovation</a></li>
+                            <li><a class="dropdown-item" href="assetmanagement.html">Asset Management</a></li>
+                            <li><a class="dropdown-item" href="facilitiesmanagement.html">Facilities Management</a></li>
+                            <li><a class="dropdown-item" href="buildingandengineeringcompliance.html">Building And
+                                    Engineering Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i
+                                    class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="need-help-wrapper">
+        <div class="need-help">
+            <button id="needHelpBtn" class="need-help-btn">
+                <i class="fa-regular fa-comment-dots"></i>
+            </button>
+        </div>
+        <div id="needHelpForm" class="need-help-form hidden">
+            <button class="close-button" onclick="closeForm()">X</button>
+            <input type="text" placeholder="Your Name" class="form-control" />
+            <input type="email" placeholder="Your Email Address" class="form-control" />
+            <input type="tel" placeholder="Your Phone Number" class="form-control" />
+            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+            <button type="submit" class="form-control">Send Now</button>
+        </div>
+    </section>
+    <section class="hero-wrapper">
+        <div class="hero-container">
+            <video class="hero-video" autoplay muted loop>
+                <source src="./images/hero-video-final.mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1>Your Trusted Partner for <i>Exceptional</i> <br> Bathroom Renovations</h1>
+                        <p><i>We're a Brisbane-based crew handling renos, repairs, projects & facilities <br>
+                                management, asset care.</i></p>
+                        <a href="contact.html"><button class="theme-btn">Book Your Free Consultation Today! <i
+                                    class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-banner">
+                <img src="./images/hero-banner.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="feature-wrapper">
+        <div class="feature-list">
+            <a href="contact.html" class="feature">
+                <div class="feature-1 feature-img">
+                    <figure class="services__image">
+                        <img src="./images/feature-1.jpg" alt="feature-1">
+                    </figure>
+                    <div class="feature-content">
+                        <p>High-Quality Craftmanship</p>
+                        <h2>Quality Work Guaranteed</h2>
+                    </div>
+                    <div class="feature-button">
+                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="contact.html" class="feature">
+                <div class="feature-2 feature-img">
+                    <figure class="services__image">
+                        <img src="./images/feature-2.jpg" alt="feature-1">
+                    </figure>
+                    <div class="feature-content">
+                        <p>Personalized Service</p>
+                        <h2>Project on Time</h2>
+                    </div>
+                    <div class="feature-button">
+                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="contact.html" class="feature">
+                <div class="feature-3 feature-img">
+                    <figure class="services__image">
+                        <img src="./images/feature-3.jpg" alt="feature-1">
+                    </figure>
+                    <div class="feature-content">
+                        <p>Think Ahead</p>
+                        <h2>Re-imagine your space</h2>
+                    </div>
+                    <div class="feature-button">
+                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="about-wrapper">
+        <div class="container about-container">
+            <div class="about-top row">
+                <div class="about-top-left col-lg-6">
+                    <h3>About Us</h3>
+                    <h1><span class="heading">Q1 Building Services</span></h1>
+                    <p>We're a tight-knit team of experts, tradespeople, and problem solvers. As a boutique building
+                        company, we offer top-notch, personalized service and love having our clients involved in their
+                        dream projects. We provide a range of trade services accross Queensland and NSW. <br> <br> <br>
+                        We team up with a qualified architect and building certifier to provide the best services
+                        around. If you don't have plans yet, we can help design your dream project and handle the
+                        Council approval. We take care of every detail from start to finish, guiding you every step of
+                        the way for a stress-free experience.</p>
+                </div>
+                <div class="about-top-right col-lg-6">
+                    <img src="./images/about-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-bottom row">
+                <div class="about-bottom-left col-lg-6">
+                    <p>We take pride in our commitment to excellence, customer satisfaction, and a seamless construction
+                        experience. We are committed to growing our business while maintaining the personal approach
+                        that sets us apart from the rest.</p>
+                    <button class="theme-btn">Our Concept <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                </div>
+                <div class="about-bottom-right col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="progress-circle">
+                                <svg class="circle" width="120" height="120">
+                                    <circle cx="60" cy="60" r="50" stroke="#eee" stroke-width="10" fill="none" />
+                                    <circle cx="60" cy="60" r="50" stroke="#4bc6ac" stroke-width="10" fill="none"
+                                        stroke-dasharray="314.16" stroke-dashoffset="78.54"
+                                        transform="rotate(-90 60 60)" />
+                                    <text x="60" y="70" text-anchor="middle" fill="#000" font-size="28px">75%</text>
+                                </svg>
+                                <p class="mt-2">SPENT PER PROJECT<br><strong>Designing</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="progress-circle">
+                                <svg class="circle" width="120" height="120">
+                                    <circle cx="60" cy="60" r="50" stroke="#eee" stroke-width="10" fill="none" />
+                                    <circle cx="60" cy="60" r="50" stroke="#4bc6ac" stroke-width="10" fill="none"
+                                        stroke-dasharray="314.16" stroke-dashoffset="47.12"
+                                        transform="rotate(-90 60 60)" />
+                                    <text x="60" y="70" text-anchor="middle" fill="#000" font-size="28px">85%</text>
+                                </svg>
+                                <p class="mt-2">BASIC CONCEPT<br><strong>Approved</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="progress-circle">
+                                <svg class="circle" width="120" height="120">
+                                    <circle cx="60" cy="60" r="50" stroke="#eee" stroke-width="10" fill="none" />
+                                    <circle cx="60" cy="60" r="50" stroke="#4bc6ac" stroke-width="10" fill="none"
+                                        stroke-dasharray="314.16" stroke-dashoffset="0" transform="rotate(-90 60 60)" />
+                                    <text x="60" y="70" text-anchor="middle" fill="#000" font-size="28px">100%</text>
+                                </svg>
+                                <p class="mt-2">CLIENT SATISFACTION<br><strong>Guaranteed</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-wrapper">
+        <div class="container services-container">
+            <h3>Services</h3>
+            <h1>Our Popular Services</h1>
+            <div class="services">
+                <div class="service-img">
+                    <figure class="services__image">
+                        <img src="./images/service-1.png">
+                    </figure>
+                    <div class="service-img-content">
+                        <h2>Project Management</h2>
+                        <p>Enquire Today</p>
+                    </div>
+                </div>
+
+                <div class="service-img">
+                    <figure class="services__image">
+                        <img src="./images/service-2.png">
+                    </figure>
+                    <div class="service-img-content">
+                        <h2>Project Management</h2>
+                        <p>Enquire Today</p>
+                    </div>
+                </div>
+                <div class="service-img">
+                    <figure class="services__image">
+                        <img src="./images/service-3.png">
+                    </figure>
+                    <div class="service-img-content">
+                        <h2>Project Management</h2>
+                        <p>Enquire Today</p>
+                    </div>
+                </div>
+            </div>
+            <a href="bathroomrenovation.html"><button class="theme-btn view-btn">View All Services <i
+                        class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+        </div>
+    </section>
+    <section class="why-choose-us-wrapper">
+        <div class="why-choose-us-container">
+            <div class="why-choose-us-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="why-choose-us-top-left col-lg-6">
+                            <h4>DESIGNERS & INNOVATORS</h4>
+                            <h1><span class="heading">Why Choose Us?</span></h1>
+                        </div>
+                        <div class="why-choose-us-top-right col-lg-6">
+                            <p>With over 15 years of experience, we bring unparalleledd knowledge and skill to every
+                                project. WE treat every project as unique, offering tailored solutions to meet your
+                                needs. Our reputation is built on trust, transparency, and a history of satisfied
+                                clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-choose-us-bottom">
+                <div class="why-choose-us-images">
+                    <div class="why-choose-us-img1">
+                        <figure class="services__image">
+                            <img src="./images/wcu-1.jpg">
+                        </figure>
+                        <div class="why-choose-us-inner-1">
+                            <img src="./images/high-quality.png">
+                            <h2>Experienced Builders</h2>
+                        </div>
+                    </div>
+                    <div class="why-choose-us-img2">
+                        <figure class="services__image">
+                            <img src="./images/wcu-2.jpg">
+                        </figure>
+                        <div class="why-choose-us-inner-2">
+                            <img src="./images/deadline.png">
+                            <h2>Finest Craftmanship</h2>
+                        </div>
+                    </div>
+                    <div class="why-choose-us-img3">
+                        <figure class="services__image">
+                            <img src="./images/wcu-3.jpg">
+                        </figure>
+                        <div class="why-choose-us-inner-3">
+                            <img src="./images/helmet.png">
+                            <h2>Locally Owned & Operated</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-wrapper">
+        <div class="container gallery-container">
+            <h4>Gallery</h4>
+            <h1><span class="heading">Our Recent Projects</span></h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/gallery-1.webp" class="rotate-on-hover">
+                    <h2>Bathroom</h2>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/gallery-2.webp" class="rotate-on-hover">
+                    <h2>Kitchen</h2>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/gallery-3.webp" class="rotate-on-hover">
+                    <h2>Living Room</h2>
+                </div>
+            </div>
+            <a href="gallery.html"><button class="theme-btn view-gallery-btn">View All Gallery <i
+                        class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+        </div>
+    </section>
+    <section class="refine-wrapper">
+        <div class="refine-container">
+            <div class="left-section">
+                <img src="./images/refine-design-image-1.jpg" alt="">
+                <div class="left-section-content">
+                    <h2>Respect for your home</h2>
+                    <p>We value the respect and consideration of our client's homes.</p>
+                    <a href="bathroomrenovation.html"><button class="theme-btn learn-more-btn">Learn More <i
+                                class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="./images/refine-design-image-2.jpg" alt="">
+                <div class="right-section-content">
+                    <h2>Fully Licensed & Insured</h2>
+                    <p>We are fully licensed and insured, giving you peace of mind that your innovation is in safe
+                        hands.</p>
+                    <a href="bathroomrenovation.html"><button class="theme-btn learn-more-btn">Learn More <i
+                                class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-wrapper">
+        <div class="container">
+            <div class="testimonials-container">
+                <h4>Testimonials</h4>
+                <h1><span class="heading">Our Client's Reviews</span></h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-top">
+                                    <div class="client-img">
+                                        <img src="./images/client-1.webp" alt="">
+                                    </div>
+                                    <div class="client-details">
+                                        <h5>Olivia</h5>
+                                        <img src="./images/single-star-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <h3>Outstanding team</h3>
+                                <p>
+                                    "Q1 transformed our tired bathroom into a sleek, modern
+                                    space. The team was courteous, efficient, and paid attention
+                                    to every detail. Absolutely thrilled with the result!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-top">
+                                    <div class="client-img">
+                                        <img src="./images/client-2.webp" alt="">
+                                    </div>
+                                    <div class="client-details">
+                                        <h5>Paul</h5>
+                                        <img src="./images/single-star-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <h3>Astounding Result</h3>
+                                <p>
+                                    "We gave Q1 the job of renovating our office space and the
+                                    results were outstanding and perfect. Functional, modern,
+                                    and well thought out. The process was easy from start to
+                                    finish."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-top">
+                                    <div class="client-img">
+                                        <img src="./images/client-3.webp" alt="">
+                                    </div>
+                                    <div class="client-details">
+                                        <h5>Alex</h5>
+                                        <img src="./images/single-star-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <h3>Highly Recommended</h3>
+                                <p>
+                                    "Our building needed urgent compliance updates, and Q1
+                                    handled the entire process professionally. They made sure
+                                    everything was done by the book, with no stress on our end."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-top">
+                                    <div class="client-img">
+                                        <img src="./images/client-4.webp" alt="">
+                                    </div>
+                                    <div class="client-details">
+                                        <h5>Melissa</h5>
+                                        <img src="./images/single-star-img.webp" alt="">
+                                    </div>
+                                </div>
+                                <h3>Amazing team</h3>
+                                <p>
+                                    "Our major building renovation ran on time and budget thanks
+                                    to Q1. Their project leaders were approachable, organised,
+                                    and genuinely passionate about what they do. Highly
+                                    recommended!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="reviews.html"><button class="theme-btn view-reviews-btn">View all Reviews &nbsp;<img
+                            src="./images/google.png" alt=""></button></a>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-wrapper">
+        <div class="container scroll-container">
+            <div class="scroll-text">
+                <span>Bathroom Renovation</span>
+                <span>Construction</span>
+                <span>Maintenance</span>
+                <span>Residental</span>
+                <span>Commercial</span>
+                <span>Management</span>
+                <span>Bathroom Renovation</span>
+                <span>Construction</span>
+                <span>Maintenance</span>
+                <span>Residental</span>
+                <span>Commercial</span>
+                <span>Management</span>
+            </div>
+        </div>
+    </section>
+    <section class="contact-wrapper">
+        <div class="container contact-container">
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <h6>Contact Us Now</h6>
+                    <h1><span class="heading">Start Your Innovation Journey Today</span></h1>
+                    <p>Ready to transform your home? Fill out the form below, or call us to set up a free, no-obligation
+                        consultation with one of our experts.</p>
+                    <div class="contact-email-container">
+                        <input type="email" placeholder="Enter email address...">
+                        <button class="theme-btn">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/newsletter-image.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ready-to-start-wrapper">
+        <div class="container ready-to-start-container">
+            <img src="./images/down-arrow.png" class="arrow-down">
+            <h1>READY TO START YOUR <span class="ready">PROJECT</span>?</h1>
+            <a href="contact.html"><button class="theme-btn touch-btn">Get in Touch <i
+                        class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+        </div>
+    </section>
+    <section class="footer-wrapper">
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="./images/white-logo-main.png" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            We can help design your dream project and handle the Council approval. We take care of every
+                            detail from start to finish, guiding you every step of the way for a stress-free experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <h4>QUICK LINKS</h4>
+                            <a href="index.html">
+                                <p>Home</p>
+                            </a>
+                            <a href="about.html">
+                                <p>About Us</p>
+                            </a>
+                            <a href="reviews.html">
+                                <p>Reviews</p>
+                            </a>
+                            <a href="gallery.html">
+                                <p>Gallery</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Contact</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>USEFUL LINKS</h4>
+                            <p>Search</p>
+                            <p>FAQS</p>
+                            <a href="about.html">
+                                <p>Book Now</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Our Concept</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>OUR SERVICES</h4>
+                            <a href="bathroomrenovation.html">
+                                <p>Bathroom Renovation</p>
+                            </a>
+                            <a href="projectmanagement.html">
+                                <p>Project Management</p>
+                            </a>
+                            <a href="buildingrenovation.html">
+                                <p>Building Renovation</p>
+                            </a>
+                            <a href="assetmanagement.html">
+                                <p>Asset Management</p>
+                            </a>
+                            <a href="facilitiesmanagement.html">
+                                <p>Facilities Management</p>
+                            </a>
+                            <a href="buildingandengineeringcompliance.html">
+                                <p>Building & Engineering Compliance</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>CONTACTS</h4>
+                            <p>PHONE</p>
+                            <p>0732744729</p>
+                            <p>EMAIL</p>
+                            <p>info@q1buildingservices.com.au</p>
+                            <p>
+                                <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                    class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="footer-bottom">
+                    <div class="footer-bottom-text">
+                        <p>© 2025 Q1 BUILDING SERVICES AND MAINTENANCE. All rights reserved.</p>
+                    </div>
+                    <div class="footer-images">
+                        <p>
+                            <img src="./images/visa.png" />
+                            <img src="./images/mastercard.png" />
+                            <img src="./images/american-express.png" />
+                            <img src="./images/paypal.png" />
+                            <img src="./images/discover.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
+        document.getElementById("cross-btn").addEventListener("click", function () {
+            document.getElementById("check").checked = false;
+        });
+    </script>
+
+
+    <script>
+        const needHelpBtn = document.getElementById("needHelpBtn");
+        const needHelpForm = document.getElementById("needHelpForm");
+
+        needHelpBtn.addEventListener("click", () => {
+            needHelpForm.classList.toggle("hidden");
+        });
+    </script>
+
+    <script>
+        function closeForm() {
+            document.getElementById('needHelpForm').classList.add('hidden');
+        }
+    </script>
+
+    
+</body>
+
+</html>

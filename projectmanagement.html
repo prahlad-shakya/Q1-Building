@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Building</title>
+    <link rel="icon" href="https://handyhelpforhire.com.au/assets/img/white-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container navbar-container">
+                <a href="index.html"><img src="./images/white-logo.png" alt="Logo" class="logo"></a>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="navbar-nav">
+                    <button id="cross-btn" class="cross cross-btn">X</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bathroomrenovation.html">Bathroom Renovation</a></li>
+                            <li><a class="dropdown-item" href="projectmanagement.html">Project Management</a></li>
+                            <li><a class="dropdown-item" href="buildingrenovation.html">Building Renovation</a></li>
+                            <li><a class="dropdown-item" href="assetmanagement.html">Asset Management</a></li>
+                            <li><a class="dropdown-item" href="facilitiesmanagement.html">Facilities Management</a></li>
+                            <li><a class="dropdown-item" href="buildingandengineeringcompliance.html">Building And
+                                    Engineering Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i
+                                    class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="need-help-wrapper">
+        <div class="need-help">
+            <button id="needHelpBtn" class="need-help-btn">
+                <i class="bi bi-chat-left-dots"></i>
+            </button>
+        </div>
+        <div id="needHelpForm" class="need-help-form hidden">
+            <button class="close-button" onclick="closeForm()">X</button>
+            <input type="text" placeholder="Your Name" class="form-control" />
+            <input type="email" placeholder="Your Email Address" class="form-control" />
+            <input type="tel" placeholder="Your Phone Number" class="form-control" />
+            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+            <button type="submit" class="form-control">Send Now</button>
+        </div>
+    </section>
+    <section class="reviews-breadcrumb-wrapper">
+        <div class="container">
+            <div class="breadcrumb-container">
+                <span class="water-text">SERVICES</span>
+                <h1>Project Management</h1>
+            </div>
+            <div class="breadcrumb-container-overlay"></div>
+            <div class="breadcrumb-navigation">
+                <a href="index.html">HOME</a>
+                <p><i class="fa fa-circle"></i> &nbsp;SERVICES</p>
+            </div>
+        </div>
+    </section>
+    <section class="services-about-wrapper">
+        <div class="container services-about-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/gallery-images/project-management.jpg" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <h5>Project Management</h5>
+                    <h1><span class="heading">Expert Oversight for Stress-Free Builds</span></h1>
+                    <p>Effective project management is key to delivering quality results on time and within budget. Our
+                        dedicated team at Q1 Building Services and Maintenance oversees every aspect of your
+                        construction
+                        or renovation project--coordinating trades, managing schedules, and ensuring compliance with all
+                        regulations. We keep communication clear and progress transparent at every stage.</p>
+                    <ul class="quality-list">
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We handle every phase from planning to
+                            completion with expert coordination.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We ensure timelines, budgets, and
+                            quality standards are consistently met.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We provide seamless communication for
+                            smooth collaboration throughout.</li>
+                        <li><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;We deliver structured processes and
+                            real-time oversight to reduce delays and stress.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-service-wrapper">
+        <div class="container services-service">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./images/calendar.png" alt="">
+                    <h6>Clear Planning & Coordination</h6>
+                    <p>We align your vision with practical execution-managing timelines, resources, and expectations to
+                        ensure your project stays on track.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/interior-design.png" alt="">
+                    <h6>Clear Planning & Coordination</h6>
+                    <p>We align your vision with practical execution-managing timelines, resources, and expectations to
+                        ensure your project stays on track.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/marking.png" alt="">
+                    <h6>Clear Planning & Coordination</h6>
+                    <p>We align your vision with practical execution-managing timelines, resources, and expectations to
+                        ensure your project stays on track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="swiper-images-wrapper">
+        <div class="container">
+
+            <!-- Main Slider -->
+            <div class="swiper productSwiperMain">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/project-management-images/project-management.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Project Planning</h2>
+                            <p>This stage involves defining the project scope, objectives, stakeholders and
+                                deliveratives. Project charters and feasibility studies are prepared, and resources are
+                                allocated. A well-structured plan acts as the blueprint for the entire project
+                                lifecycle.</p>
+                            <ul>
+                                <li>Defination of project scope, goals and objectives.</li>
+                                <li>Work Breakdown Structure</li>
+                                <li>Project schedule creation</li>
+                                <li>Resource allocation and budgeting</li>
+                                <li>Risk Identification and mitigation planning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/project-management-images/backyard.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Project Execution</h2>
+                            <p>The execution phase brings the project plan to life. Teams begin performing tasks while
+                                project managers monitor progress using KPIs and performance metrics. Effective
+                                communication and issue resoultion are key to maintaining momentum.</p>
+                            <ul>
+                                <li>Team formation and task assignment.</li>
+                                <li>Communication and collaboration tools.</li>
+                                <li>Monitoring work progress and productivity</li>
+                                <li>Qulaity assurance and control</li>
+                                <li>Handling changes and issues during project.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/project-management-images/bathroom-renovation1.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Project Monitoring and Control</h2>
+                            <p>Managing a project team involves building a productive team environment, delegating tasks
+                                and resolving conflicts. Clear communication channels and tools like meetings, reports
+                                and project dashboards are vital for coordination.</p>
+                            <ul>
+                                <li>Tracking project performance</li>
+                                <li>Cost and time management</li>
+                                <li>Risk tracking and issue resolution</li>
+                                <li>Change management processes</li>
+                                <li>Status reporting and stackholder communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="./images/project-management-images/hall.jpg" />
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h2>Project Closure</h2>
+                            <p>At project completion, deliverables are handed over, documentation is finalized, and
+                                performance is reviewed. Lessons learned are captured to improve future project
+                                processes.</p>
+                            <ul>
+                                <li>Final deliverables review and approval</li>
+                                <li>Client satisfaction and feedback</li>
+                                <li>Documentation and knowledge transfer</li>
+                                <li>Team evaluation and performance analysis</li>
+                                <li>Lessons learned and post-project review</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Thumbnail Slider -->
+            <div thumbsSlider="" class="swiper productSwiperThumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Project Planning</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Project Execution</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Project Monitoring</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="theme-btn">Project Closure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <section class="services-images-wrapper">
+        <div class="services-images-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/backyard.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Backyard">
+                                <img src="./images/project-management-images/backyard.jpg" alt="Backyard">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/bathroom-renovation1.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Bathroom Renovation">
+                                <img src="./images/project-management-images/bathroom-renovation1.jpg"
+                                    alt="Bathroom Renovation">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/duplex.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Duplex">
+                                <img src="./images/project-management-images/duplex.jpg" alt="Duplex">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/hall.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Hall">
+                                <img src="./images/project-management-images/hall.jpg" alt="Hall">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/kitchen.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Kitchen">
+                                <img src="./images/project-management-images/kitchen.jpg" alt="Kitchen">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="services__image">
+                            <a href="./images/project-management-images/project-management.jpg" class="glightbox"
+                                data-gallery="project-management-gallery" data-title="Project Management">
+                                <img src="./images/project-management-images/project-management.jpg"
+                                    alt="Project Management">
+                            </a>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-get-a-quote-wrapper">
+        <div class="container services-quote">
+            <div class="row">
+                <div class="col-lg-6 services-quote-left">
+                    <h2><span class="heading">Seamless Project Execution</span></h2>
+                    <p>At Q1 Building Services and Maintenance, we approach every construction or renovation project
+                        with the utmost care and attention to detail. From planning to execution, our project management
+                        services are designed to ensure smooth, efficient and successful outcomes. <br><br> We combine
+                        expert coordination, clear communication, and a focus on quality to bring your vision to life,
+                        delivering results that are on time, within budget, and built to last.</p>
+                    <button class="theme-btn">Get a quote</button>
+                </div>
+                <div class="col-lg-6 services-quote-right">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    1. How do you ensure projects stay on schedule?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    We create detailed timelines, coordinate all trades efficiently, and monitor
+                                    progress regularly to keep everything on track and avoid delays.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    2. Do you handle permits and approvals?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Yes, we manage all necessary permits and ensure the project complies with local
+                                    building codes and regulations from start to finish.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    3. Can you manage both residental and commercial projects?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Absolutely, Our team has experience managing a wide range of projects, from home
+                                    renovations to commercial developments.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-wrapper">
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="./images/white-logo-main.png" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            We can help design your dream project and handle the Council approval. We take care of every
+                            detail from
+                            start to finish, guiding you every step of the way for a stress-free experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <h4>QUICK LINKS</h4>
+                            <a href="index.html">
+                                <p>Home</p>
+                            </a>
+                            <a href="about.html">
+                                <p>About Us</p>
+                            </a>
+                            <a href="reviews.html">
+                                <p>Reviews</p>
+                            </a>
+                            <a href="gallery.html">
+                                <p>Gallery</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Contact</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>USEFUL LINKS</h4>
+                            <p>Search</p>
+                            <p>FAQS</p>
+                            <a href="about.html">
+                                <p>Book Now</p>
+                            </a>
+                            <a href="contact.html">
+                                <p>Our Concept</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>OUR SERVICES</h4>
+                            <a href="bathroomrenovation.html">
+                                <p>Bathroom Renovation</p>
+                            </a>
+                            <a href="projectmanagement.html">
+                                <p>Project Management</p>
+                            </a>
+                            <a href="buildingrenovation.html">
+                                <p>Building Renovation</p>
+                            </a>
+                            <a href="assetmanagement.html">
+                                <p>Asset Management</p>
+                            </a>
+                            <a href="facilitiesmanagement.html">
+                                <p>Facilities Management</p>
+                            </a>
+                            <a href="buildingandengineeringcompliance.html">
+                                <p>Building & Engineering Compliance</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4>CONTACTS</h4>
+                            <p>PHONE</p>
+                            <p>0732744729</p>
+                            <p>EMAIL</p>
+                            <p>info@q1buildingservices.com.au</p>
+                            <p>
+                                <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                    class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="footer-bottom">
+                    <div class="footer-bottom-text">
+                        <p>© 2025 Q1 BUILDING SERVICES AND MAINTENANCE. All rights reserved.</p>
+                    </div>
+                    <div class="footer-images">
+                        <p>
+                            <img src="./images/visa.png" />
+                            <img src="./images/mastercard.png" />
+                            <img src="./images/american-express.png" />
+                            <img src="./images/paypal.png" />
+                            <img src="./images/discover.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
+        var productThumbs = new Swiper(".productSwiperThumbs", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+
+        var productMain = new Swiper(".productSwiperMain", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: productThumbs,
+            },
+        });
+    </script>
+
+    <script>
+        const needHelpBtn = document.getElementById("needHelpBtn");
+        const needHelpForm = document.getElementById("needHelpForm");
+
+        needHelpBtn.addEventListener("click", () => {
+            needHelpForm.classList.toggle("hidden");
+        });
+    </script>
+
+    <script>
+        function closeForm() {
+            document.getElementById('needHelpForm').classList.add('hidden');
+        }
+    </script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            loop: true,
+            touchNavigation: true
+        });
+    </script>
+</body>
+
+</html>
