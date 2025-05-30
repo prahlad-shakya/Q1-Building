@@ -840,7 +840,8 @@ footer p {
 .customer-name {
   text-align: right;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 5px;
 }
 .review-quote-mark {
   font-size: 50px;
@@ -849,7 +850,6 @@ footer p {
 .stars {
   color: rgba(255, 166, 0, 0.733);
   font-size: 25px;
-  margin-top: -5px;
 }
 .contact-breadcrumb-wrapper {
   position: relative;
@@ -1394,6 +1394,10 @@ input::-webkit-inner-spin-button {
   } */
   .navbar-nav .theme-btn {
     display: none;
+  }
+  .navbar-nav .cross-btn{
+    text-align: right;
+    margin-right: 10px;
   }
 
   .hero-container {
