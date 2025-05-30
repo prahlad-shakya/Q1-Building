@@ -66,14 +66,14 @@
         <i class="fa-regular fa-comment-dots"></i>
       </button>
     </div>
-    <div id="needHelpForm" class="need-help-form hidden">
+    <form id="needHelpForm" class="need-help-form hidden">
       <button class="close-button" onclick="closeForm()">X</button>
-      <input type="text" placeholder="Your Name" class="form-control" />
-      <input type="email" placeholder="Your Email Address" class="form-control" />
-      <input type="tel" placeholder="Your Phone Number" class="form-control" />
-      <textarea placeholder="Write your message here?" class="form-control"></textarea>
+      <input type="text" placeholder="Your Name" class="form-control" required />
+      <input type="email" placeholder="Your Email Address" class="form-control" required />
+      <input type="tel" placeholder="Your Phone Number" class="form-control" required />
+      <textarea placeholder="Write your message here?" class="form-control" required></textarea>
       <button type="submit" class="form-control">Send Now</button>
-    </div>
+    </form>
   </section>
   <section class="about-breadcrumb-wrapper">
     <div class="container">
@@ -110,7 +110,8 @@
           <p>We take pride in our commitment to excellence, customer satisfaction, and a seamless construction
             experience. We are committed to growing our business while maintaining the personal approach that sets us
             apart from the rest.</p>
-          <a href="about.html"><button class="theme-btn">Our Concept <i class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+          <a href="about.html"><button class="theme-btn">Our Concept <i
+                class="fa-solid fa-arrow-right rotate-45"></i></button></a>
         </div>
         <div class="about-bottom-right col-lg-6">
           <div class="row">

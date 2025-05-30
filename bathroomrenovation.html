@@ -69,14 +69,14 @@
                 <i class="fa-regular fa-comment-dots"></i>
             </button>
         </div>
-        <div id="needHelpForm" class="need-help-form hidden">
+        <form id="needHelpForm" class="need-help-form hidden">
             <button class="close-button" onclick="closeForm()">X</button>
-            <input type="text" placeholder="Your Name" class="form-control" />
-            <input type="email" placeholder="Your Email Address" class="form-control" />
-            <input type="tel" placeholder="Your Phone Number" class="form-control" />
-            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+            <input type="text" placeholder="Your Name" class="form-control" required />
+            <input type="email" placeholder="Your Email Address" class="form-control" required />
+            <input type="tel" placeholder="Your Phone Number" class="form-control" required/>
+            <textarea placeholder="Write your message here?" class="form-control" required></textarea>
             <button type="submit" class="form-control">Send Now</button>
-        </div>
+        </form>
     </section>
     <section class="reviews-breadcrumb-wrapper">
         <div class="container">
@@ -144,6 +144,24 @@
     </section>
     <section class="swiper-images-wrapper">
         <div class="container swiper-images">
+            <!-- Thumbnail Slider -->
+            <div class="services-nav productSwiperThumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services-nav-item active">Combined Bathroom</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">Walk-In Shower</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">Master Bathroom</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">Powder Bathroom</div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Main Slider -->
             <div class="swiper productSwiperMain">
                 <div class="swiper-wrapper">
@@ -229,24 +247,6 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-            </div>
-
-            <!-- Thumbnail Slider -->
-            <div thumbsSlider="" class="swiper productSwiperThumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Combined Bathroom</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Walk-In Shower</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Master Bathroom</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Powder Bathroom</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -575,6 +575,15 @@
             selector: '.glightbox',
             loop: true,
             touchNavigation: true
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.services-nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.services-nav-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
         });
     </script>
 

@@ -67,14 +67,14 @@
                 <i class="fa-regular fa-comment-dots"></i>
             </button>
         </div>
-        <div id="needHelpForm" class="need-help-form hidden">
-            <button class="close-button" onclick="closeForm()">X</button>
-            <input type="text" placeholder="Your Name" class="form-control" />
-            <input type="email" placeholder="Your Email Address" class="form-control" />
-            <input type="tel" placeholder="Your Phone Number" class="form-control" />
-            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+        <form id="needHelpForm" class="need-help-form hidden">
+            <button class="close-button" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></button>
+            <input type="text" placeholder="Your Name" class="form-control" required />
+            <input type="email" placeholder="Your Email Address" class="form-control" required/>
+            <input type="number" placeholder="Your Phone Number" class="form-control" required/>
+            <textarea placeholder="Write your message here?" class="form-control" required></textarea>
             <button type="submit" class="form-control">Send Now</button>
-        </div>
+        </form>
     </section>
     <section class="hero-wrapper">
         <div class="hero-container">
@@ -100,7 +100,7 @@
     </section>
     <section class="feature-wrapper">
         <div class="feature-list">
-            <a href="contact.html" class="feature">
+            <div class="feature">
                 <div class="feature-1 feature-img">
                     <figure class="services__image">
                         <img src="./images/feature-1.jpg" alt="feature-1">
@@ -110,11 +110,11 @@
                         <h2>Quality Work Guaranteed</h2>
                     </div>
                     <div class="feature-button">
-                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button></a>
                     </div>
                 </div>
-            </a>
-            <a href="contact.html" class="feature">
+            </div>
+            <div class="feature">
                 <div class="feature-2 feature-img">
                     <figure class="services__image">
                         <img src="./images/feature-2.jpg" alt="feature-1">
@@ -124,11 +124,11 @@
                         <h2>Project on Time</h2>
                     </div>
                     <div class="feature-button">
-                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button></a>
                     </div>
                 </div>
-            </a>
-            <a href="contact.html" class="feature">
+            </div>
+            <div class="feature">
                 <div class="feature-3 feature-img">
                     <figure class="services__image">
                         <img src="./images/feature-3.jpg" alt="feature-1">
@@ -138,10 +138,10 @@
                         <h2>Re-imagine your space</h2>
                     </div>
                     <div class="feature-button">
-                        <button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button>
+                        <a href="contact.html"><button class="theme-btn">Get a Quote <i class="fa-solid fa-arrow-right rotate-45"></i></button></a>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
     <section class="about-wrapper">
@@ -167,7 +167,8 @@
                     <p>We take pride in our commitment to excellence, customer satisfaction, and a seamless construction
                         experience. We are committed to growing our business while maintaining the personal approach
                         that sets us apart from the rest.</p>
-                    <a href="about.html"><button class="theme-btn">Our Concept <i class="fa-solid fa-arrow-right rotate-45"></i></button></a>
+                    <a href="about.html"><button class="theme-btn">Our Concept <i
+                                class="fa-solid fa-arrow-right rotate-45"></i></button></a>
                 </div>
                 <div class="about-bottom-right col-lg-6">
                     <div class="row">

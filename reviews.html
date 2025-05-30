@@ -59,21 +59,21 @@
         </ul>
       </div>
     </nav>
-  </section>
+  </section>  
   <section class="need-help-wrapper">
     <div class="need-help">
       <button id="needHelpBtn" class="need-help-btn">
         <i class="fa-regular fa-comment-dots"></i>
       </button>
     </div>
-    <div id="needHelpForm" class="need-help-form hidden">
+    <form id="needHelpForm" class="need-help-form hidden">
       <button class="close-button" onclick="closeForm()">X</button>
-      <input type="text" placeholder="Your Name" class="form-control" />
-      <input type="email" placeholder="Your Email Address" class="form-control" />
-      <input type="tel" placeholder="Your Phone Number" class="form-control" />
-      <textarea placeholder="Write your message here?" class="form-control"></textarea>
+      <input type="text" placeholder="Your Name" class="form-control" required/>
+      <input type="email" placeholder="Your Email Address" class="form-control" required/>
+      <input type="tel" placeholder="Your Phone Number" class="form-control" required/>
+      <textarea placeholder="Write your message here?" class="form-control" required ></textarea>
       <button type="submit" class="form-control">Send Now</button>
-    </div>
+    </form>
   </section>
   <section class="reviews-breadcrumb-wrapper">
     <div class="container">
@@ -96,11 +96,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Jeremy-Marron.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Jack</div>
+                  <div class="customer">
+                    <div class="customer-name">Jack</div>
+                    <div class="customer-img"><img src="./images/client-1.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -115,11 +117,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Karmyn-Babcock.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Sophie</div>
+                  <div class="customer">
+                    <div class="customer-name">Sophie</div>
+                    <div class="customer-img"><img src="./images/client-2.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -134,11 +138,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Jim-Wells.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Blake</div>
+                  <div class="customer">
+                    <div class="customer-name">Blake</div>
+                    <div class="customer-img"><img src="./images/client-3.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -153,11 +159,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Shane-Bauer.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Melissa</div>
+                  <div class="customer">
+                    <div class="customer-name">Melissa</div>
+                    <div class="customer-img"><img src="./images/client-4.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -172,11 +180,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Kevin-McClain.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Jason</div>
+                  <div class="customer">
+                    <div class="customer-name">Jason</div>
+                    <div class="customer-img"><img src="./images/client-1.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -191,11 +201,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Ryan-Lamb.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Amber</div>
+                  <div class="customer">
+                    <div class="customer-name">Amber</div>
+                    <div class="customer-img"><img src="./images/client-2.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -210,11 +222,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Jeremy-Marron.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Callum</div>
+                  <div class="customer">
+                    <div class="customer-name">Callum</div>
+                    <div class="customer-img"><img src="./images/client-1.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -229,11 +243,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Karmyn-Babcock.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Tahila</div>
+                  <div class="customer">
+                    <div class="customer-name">Tahila</div>
+                    <div class="customer-img"><img src="./images//client-2.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -248,11 +264,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Jim-Wells.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Lachlan</div>
+                  <div class="customer">
+                    <div class="customer-name">Lachlan</div>
+                    <div class="customer-img"><img src="./images/client-4.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -267,11 +285,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Shane-Bauer.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Zoe</div>
+                  <div class="customer">
+                    <div class="customer-name">Zoe</div>
+                    <div class="customer-img"><img src="./images/client-1.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -286,11 +306,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Kevin-McClain.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Ethan</div>
+                  <div class="customer">
+                    <div class="customer-name">Ethan</div>
+                    <div class="customer-img"><img src="./images/client-3.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>
@@ -305,11 +327,13 @@
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="./images/Leadership-images/Ryan-Lamb.jpg" alt="">
               <div class="card-body-top">
                 <div class="review-quote-mark">❝</div>
                 <div class="card-body-top-right">
-                  <div class="customer-name">Maddison</div>
+                  <div class="customer">
+                    <div class="customer-name">Maddison</div>
+                    <div class="customer-img"><img src="./images/client-1.webp" alt=""></div>
+                  </div>
                   <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                       class="fa fa-star"></i><i class="fa fa-star"></i></div>
                 </div>

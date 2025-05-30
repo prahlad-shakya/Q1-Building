@@ -68,14 +68,14 @@
                 <i class="fa-regular fa-comment-dots"></i>
             </button>
         </div>
-        <div id="needHelpForm" class="need-help-form hidden">
+        <form id="needHelpForm" class="need-help-form hidden">
             <button class="close-button" onclick="closeForm()">X</button>
-            <input type="text" placeholder="Your Name" class="form-control" />
-            <input type="email" placeholder="Your Email Address" class="form-control" />
-            <input type="tel" placeholder="Your Phone Number" class="form-control" />
-            <textarea placeholder="Write your message here?" class="form-control"></textarea>
+            <input type="text" placeholder="Your Name" class="form-control" required/>
+            <input type="email" placeholder="Your Email Address" class="form-control" required/>
+            <input type="tel" placeholder="Your Phone Number" class="form-control" required/>
+            <textarea placeholder="Write your message here?" class="form-control" required></textarea>
             <button type="submit" class="form-control">Send Now</button>
-        </div>
+        </form>
     </section>
     <section class="reviews-breadcrumb-wrapper">
         <div class="container">
@@ -143,6 +143,24 @@
     </section>
     <section class="swiper-images-wrapper">
         <div class="container">
+            <!-- Thumbnail Slider -->
+            <div class="services-nav productSwiperThumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services-nav-item active">Building Codes</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">MEP Compliance</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">Health Compliance</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services-nav-item">Inspection Certification</div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Main Slider -->
             <div class="swiper productSwiperMain">
                 <div class="swiper-wrapper">
@@ -218,24 +236,6 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-            </div>
-
-            <!-- Thumbnail Slider -->
-            <div thumbsSlider="" class="swiper productSwiperThumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Building Codes</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">MEP Compliance</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Health Compliance</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="theme-btn">Inspection Certification</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -550,6 +550,15 @@
             selector: '.glightbox',
             loop: true,
             touchNavigation: true
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.services-nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.services-nav-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
         });
     </script>
 
